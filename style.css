@@ -1,0 +1,22 @@
+:root {
+  --canvas-blur: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: black;
+}
+
+canvas {
+  display: block;
+  width: 100vmin;
+  height: 100vmin;
+  margin: auto;
+  filter: blur(var(--canvas-blur));
+}
