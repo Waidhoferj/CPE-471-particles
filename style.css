@@ -11,6 +11,7 @@ body {
   height: 100%;
   margin: 0;
   background: black;
+  font-family: sans-serif;
 }
 
 canvas {
@@ -19,4 +20,27 @@ canvas {
   height: 100vmin;
   margin: auto;
   filter: blur(var(--canvas-blur));
+}
+
+.error-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(226, 192, 81);
+  padding: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
 }

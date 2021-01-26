@@ -44,6 +44,7 @@ const camera = {
 
 const canvas = document.getElementById("scene") as HTMLCanvasElement;
 const gl = canvas.getContext("webgl2");
+if (!gl) document.querySelector(".error-overlay").classList.remove("hide");
 const sim = new ParticleSystem(settings, gl);
 const gui = createGui(settings);
 const particleTexture = twgl.createTexture(gl, {

@@ -131,7 +131,6 @@ export default class ParticleSystem {
   update(t: number, gl: WebGL2RenderingContext, V: twgl.m4.Mat4) {
     let i;
     for (i = 0; i < this.spawnBound; i++) {
-      if (this.spawnBound > this.particles.length) debugger;
       let f = this.getForce(this.particles[i].position);
       this.particles[i].update(t, f);
     }
